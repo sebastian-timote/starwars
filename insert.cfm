@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--- tags --->
 <cfquery name="querySW" datasource="starwars" username="root" password="">
     INSERT INTO `datastarwars1`
@@ -23,3 +24,6 @@
             "#FORM['homeworld']#"
         );
 </cfquery>
+=======
+<cfdump var = "archivo de prueba">
+>>>>>>> origin/master

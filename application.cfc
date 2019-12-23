@@ -11,9 +11,12 @@
                     if in array, return true
                     otherwise, redirect to Login
             --->
-        <cfset this.progsOk = ["starWarsAppli/rutesfails/fails.cfm",
-                                "starWarsAppli/models/index.cfm",
-                                "starWarsAppli/components/select.json"]>
+
+
+        <cfset this.progsOk = ["proyectosGitHubCF/starWars/rutesfails/fails.cfm",<!---rutas las cuales queremos que no acceda el usuario --->
+                                "proyectosGitHubCF/starWars/models/index.cfm",<!---esto se hace para proteger estas url y que el usuario no acceda a ellas--->
+                                "proyectosGitHubCF/starWars/components/select.json"]>
+
         <cfset var isProgOk = 0 />
         <cfloop array="#this.progsOk#" index="prog">
             <cfif FindNoCase("#prog#",requestedPage)>
@@ -24,7 +27,9 @@
         
        
         <cfif NOT isProgOk><!---si es diferente de cero va a entrar--->
-            <cfset var newPage ="/starWarsAppli/" />
+
+            <cfset var newPage ="/proyectosGitHubCF/starWars/" />
+
             <cflocation url="#newPage#" addtoken="false" />
         <cfelse>
             <cfreturn true />
