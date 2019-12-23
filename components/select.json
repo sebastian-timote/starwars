@@ -1,0 +1,13 @@
+[
+    { "type":"settings" , "labelWidth":80, "inputWidth":150, "position":"absolute"  },
+    { "type":"select" , "name":"form_select_1", "label":"Combo", "labelWidth":250, "labelLeft":325, "labelTop":75, "inputLeft":325, "inputTop":100, "options":[
+                { "value":"6", "text":"- Seleccione -", "selected":"true" },
+                { "value":"1", "text":"1" },
+                { "value":"2", "text":"2" },
+                { "value":"3", "text":"3" },
+                { "value":"4", "text": "4" },
+                { "value":"5", "text": "5" } ,
+                { "value":"reset", "text":"Reset" },
+                { "value":"10","text":"Todas" }
+        ]}
+]
