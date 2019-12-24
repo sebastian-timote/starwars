@@ -2,9 +2,9 @@
 <cfcomponent output = "false">
     <cfset this.datasource = "starwars">
     <cfset this.ormEnabled = true>
-    <cfset this.ormSettings =logsql : true>
+    <cfset this.ormSettings.logsql = true>
     <cfset this.invokeImplicitAccessor = true>
-    <cffunction name="onApplicationStart" returnType="boolean" output="false">;<!--- se ejecuta cuando empiza el programa y solo una vez--->
+    <cffunction name="onApplicationStart" returnType="boolean" output="false"><!--- se ejecuta cuando empiza el programa y solo una vez--->
     
         <cfreturn true>
     </cffunction>
