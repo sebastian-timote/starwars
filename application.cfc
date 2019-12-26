@@ -22,7 +22,7 @@
                                 "proyectosGitHubCF/starWars/models/index.cfm",<!---esto se hace para proteger estas url y que el usuario no acceda a ellas--->
                                 "proyectosGitHubCF/starWars/components/select.json"]>
 
-        <cfset var isProgOk = 0 />
+        <cfset var isProgOk = 1 />
         <cfloop array="#this.progsOk#" index="prog">
             <cfif FindNoCase("#prog#",requestedPage)>
                 <cfset isProgOk = 1 />

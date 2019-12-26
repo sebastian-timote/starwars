@@ -1,6 +1,7 @@
-component persistent="true" table="datastarwars1" {
-    property name="id" column="artid" fieldtype="id" generator="increment";
-    property name="name" column="name" ormtype="string";
+
+component persistent="true" table = "datastarwars1"{
+
+    property name="id" column="name" fieldtype="id" generator="increment";
     property name="height" ormtype="int";
     property name="mass" ormtype="int";
     property name="hair_color" ormtype="text";
@@ -9,11 +10,8 @@ component persistent="true" table="datastarwars1" {
     property name="birth_year" ormtype="text";
     property name="gender" ormtype="text";
     property name="homeworld" ormtype="text";
-
+    
     function getName() {
         return uCase( variables.name );
     }
-    
-    
-
 }
