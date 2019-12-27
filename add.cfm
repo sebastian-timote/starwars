@@ -1,8 +1,10 @@
 <cfscript>
-    
-    datastarwars1 = entityNew( "datastarwars1", { name : "Painting of TV", height : 2000, hair_color : marron } );
-    datastarwars1.setName("michu");
-    entitySave( datastarwars1 );
+    WriteOutput("hello");
+    datastarwars = entityNew("starwars");
+    datastarwars.setname("michu");
+    datastarwars.setheight("120");
+    entitySave(datastarwars );
+    writeDump(datastarwars);
 
 
 </cfscript>
