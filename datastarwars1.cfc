@@ -19,8 +19,6 @@ component persistent="true" table = "datastarwars1" entityname = "starwars" outp
 		this.setskin_color(false);
 		this.seteye_color(false);
         this.setbirth_year(false);
-        this.seteye_color(false);
-        this.setbirth_year(false);
         this.setgender(false);
         this.sethomeworld(false);
     }

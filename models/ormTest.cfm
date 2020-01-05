@@ -1,4 +1,4 @@
 <cfscript> 
 ORMReload (); 
-WriteDump (EntityLoad ("starwars")); 
+WriteDump (EntityLoad ("starwars"));
 </cfscript>
