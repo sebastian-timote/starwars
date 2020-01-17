@@ -1,4 +1,5 @@
 <!---http://www.learncfinaweek.com/course/index/section/ORM/item/Intro_To_ORM/--->
+<!---archivo de seguridad--->
 <cfcomponent output = "false">
     <cfset this.datasource = "starwars">
     <cfset this.ormEnabled = true>
@@ -18,11 +19,11 @@
             --->
 
 
-        <cfset this.progsOk = ["proyectosGitHubCF/starWars/rutesfails/fails.cfm",<!---rutas las cuales queremos que no acceda el usuario --->
+        <cfset this.progsOk = ["proyectosGitHubCF/starWars/rutesfails/fails.cfm",<!---rutas las cuales no queremos que acceda el usuario --->
                                 "proyectosGitHubCF/starWars/models/index.cfm",<!---esto se hace para proteger estas url y que el usuario no acceda a ellas--->
                                 "proyectosGitHubCF/starWars/components/select.json"]>
 
-        <cfset var isProgOk = 1 />
+        <cfset var isProgOk = 1 /><!---este dato va n cero--->
         <cfloop array="#this.progsOk#" index="prog">
             <cfif FindNoCase("#prog#",requestedPage)>
                 <cfset isProgOk = 1 />

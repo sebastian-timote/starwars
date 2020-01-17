@@ -1,4 +1,4 @@
-
+//esta es una orm
 component persistent="true" table = "datastarwars1" entityname = "starwars" output = "false"{
 
     property name="name" column="name" fieldtype="id" generator="increment";

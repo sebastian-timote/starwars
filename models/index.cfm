@@ -1,4 +1,4 @@
-<!--- tags ---
+<!--- tags --->
 <cfquery name="querySW" datasource="starwars" username="root" password="">
     INSERT INTO `datastarwars1`
         (
@@ -22,4 +22,4 @@
             "#FORM['gender']#",
             "#FORM['homeworld']#"
         );
-</cfquery>--->
+</cfquery>

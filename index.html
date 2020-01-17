@@ -58,7 +58,7 @@
 
                 // FUNCTIONS
                 function getDataStarWars(cant) { // Obtiene las frasaes de la API
-                    dhx.ajax.get(`https://swapi.co/api/people/${cant}/`, function(response){ 
+                    dhx.ajax.get(`https://swapi.co/api/people/${cant}/`, function(response){
                     
                     var data = window.dhx.s2j(response.xmlDoc.responseText); // Convierte la respuesta a JSON
                         createList(data); // Envia los datos que se van a Listar    
@@ -73,7 +73,7 @@
                 }
 
                 function sendDataController(data){ // Envia los datos al controlador de CF
-                    dhx.ajax.post("models/add.cfm", data); // DHX POST
+                    dhx.ajax.post("models/index.cfm", data); // DHX POST
                     //dhx.ajax.get("index.cfm ? Key=Value"); // DHX Get
                 }
                 
